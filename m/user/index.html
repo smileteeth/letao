@@ -57,14 +57,14 @@
 <script src="../js/jquery-1.12.4.min.js"></script>
 <script>
     $.ajax({
-        url: "http://localhost:3000/user/queryUserMessage",
+        url: "/api/user/queryUserMessage",
         type: "get",
-        success: function(info){
-            console.log(info);
-            if(info.error){
-                location.href = "./login.html";
-            }
-        }
+        // success: function(info){
+        //     console.log(info);
+        //     if(info.error){
+        //         location.href = "./login.html";
+        //     }
+        // }
     })
 </script>
 </body>
